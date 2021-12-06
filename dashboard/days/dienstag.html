@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tagebuchstudie Alina Schark</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/tabs.css">
+  <link rel="stylesheet" href="../css/navigation.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="import" href="../assets/headernav.html">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" language="javascript" src="../javascripts/tabs.js"></script>
+  
+</head>
+
+<body>
+  <section class="hero is-medium is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-mobile">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <h1 class="title is-2 is-spaced">
+              Herzlich Willkommen zu meiner Tagebuchstudie am zweiten Tag!
+            </h1>
+            <h2 class="subtitle is-4">
+              Hallo und vielen Dank für die Teilnahme an meiner Tagebuchstudie!
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div id="navbar" class="navbar-brand">
+      <div class="navbar-start">
+        <a class="navbar-item" href="../start.html">
+          Start
+        </a>
+        <a class="navbar-item" href="demografie.html">
+          Demografie
+        </a>
+        <a class="navbar-item" href="alltag.html">
+          Alltägliche Aufgaben
+        </a>
+        <a class="navbar-item" href="montag.html">
+          Tag 1
+        </a>
+
+        <a class="navbar-item is-active" href="dienstag.html">
+          Tag 2
+        </a>
+
+        <a class="navbar-item" href="mittwoch.html">
+          Tag 3
+        </a>
+
+        <a class="navbar-item" href="donnerstag.html">
+          Tag 4
+        </a>
+
+        <a class="navbar-item" href="freitag.html">
+          Tag 5
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Infos
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../infos/ueber.html">
+              Über
+            </a>
+            <a class="navbar-item" href="../infos/datenschutz.html">
+              Datenschutz
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="../infos/kontakt.html">
+              Kontakt
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      
+    </div>
+  </nav>
+  
+
+  <div class="tabs is-centered">
+    <ul>
+      <li id="task1-tab" class="is-active">
+        <a onClick="openTask1()">
+          <span class="icon is-small"><i class="fa fa-html5"></i></span>
+          <span>Aufgabe 1</span>
+        </a>
+      </li>
+      
+      <li id="task2-tab">
+        <a onClick="openTask2()">
+          <span class="icon is-small"><i class="fa fa-file-code-o"></i></span>
+          <span>Aufgabe 2</span>
+        </a>
+      </li>
+      <li id="task3-tab">
+        <a onClick="openTask3()">
+          <span class="icon is-small"><i class="fa fa-cog"></i></span>
+          <span>Aufgabe 3</span>
+        </a>
+      </li>
+      <li id="task4-tab">
+        <a onClick="openTask4()">
+          <span class="icon is-small"><i class="fa fa-file-text-o"></i></span>
+          <span>Aufgabe 4</span>
+        </a>
+      </li>
+    </ul>
+    <!--/tabs is-centered-->
+  </div>
+  <div class="container">
+
+   
+    <div id="task1-tab-content">
+      <div class="column" id="task1-1">
+        <article class="message">
+          <div class="message-header">
+            <p>Bitte pro Tätigkeit einen neuen Tab verwenden</p>
+          </div>
+        </article>
+        <p>Im folgenden Teil Bitte ich dich Beschreibe möglichst detailliert, welche Aufgaben du heute am Computer
+          erledigt hast.
+          <br>
+          Notiere möglichst alle Tätigkeiten so genau wie nur möglich.
+          <br>
+
+          <br>
+          <textarea class="textarea" placeholder="z.B. Pflegen einer Kundendateiliste in Excel: Öffnen des Programms XY > Öffnen der Datei > Daten in Spalte / Zeile einpflegen > Speichern
+        " rows="5"></textarea>
+      </div>
+
+      <div class="column">
+        <p>
+          Beschreibe bitte den genaueren Kontext dieser Tätigkeit (z.B. durch Nennung der Projektphase, Zuordnung zu
+          einem bestimmten Arbeitsbereich, …)</p>
+        <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+      </div>
+      <div class="column"><p>
+        Diese Aufgabe erledige ich:
+
+      </p>
+      </div>
+      <div class="control">
+        <div class="column">
+
+          <label class="radio">
+            <input type="radio" name="moredaily">
+            Mehrmals am Tag
+          </label>
+          <label class="radio">
+            <input type="radio" name="daily">
+            jeden Tag </label>
+          <label class="radio">
+            <input type="radio" name="moreweekly">
+            2-3x in der Woche
+          </label>
+          <label class="radio">
+            <input type="radio" name="weekly">
+            Einmal pro Woche
+          </label>
+          <label class="radio">
+            <input type="radio" name="2weeks">
+            alle 2 Wochen
+          </label>
+          <label class="radio">
+            <input type="radio" name="monthly">
+            Einmal im Monat
+          </label>
+          <label class="radio">
+            <input type="radio" name="first">
+            zum ersten Mal
+          </label>
+        </div>
+      </div>
+      <div class="column">
+        <p>
+          Welche Programme / Software verwendest du, um deine Aufgabe zu erledigen?
+          <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+      </div>
+      <div class="column">
+        <p>
+          Welches Programm / Welche Programme verwendest du zur Erledigung dieser Tätigkeit?
+          <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+      </div>
+      <div class="column">
+        <p>
+          Wie funktioniert das Zusammenspiel der verschiedenen Programme?
+          <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+      </div>
+      <div class="column">
+        <p>
+          Mich interessiert auch die Zusammenarbeit mit anderen Kolleg:innen. Inwiefern sind deine Kolleg:innen in die
+          Erledigung der Aufgaben einbezogen / notwendig, um eine Aufgabe abzuschließen? Wie viele sind involviert?
+          <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+      </div>
+      <div class="column">
+        <p>
+          Wie war dein Tag?</p>
+        <div class="control">
+          <div class="column">
+
+            <label class="checkbox">
+              <input type="checkbox" name="gut">
+              Gut
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="neutral">
+              Neutral
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="schlecht">
+              Schlecht
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="stressig">
+              Stressig
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="entspannt">
+              Entspannt
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="frust">
+              Frustrierend
+            </label>
+            <textarea class="textarea" placeholder="Kommentar" rows="1"></textarea>
+          </div>
+
+          <input class="button" type="submit" value="Speichern">
+
+        </div>
+      </div>
+      </div>
+      <div id="task2-tab-content">
+        <div class="column" id="task2-1">
+          <article class="message">
+            <div class="message-header">
+              <p>Bitte pro Tätigkeit einen neuen Tab verwenden</p>
+            </div>
+          </article>
+          <p>Im folgenden Teil Bitte ich dich Beschreibe möglichst detailliert, welche Aufgaben du heute am Computer
+            erledigt hast.
+            <br>
+            Notiere möglichst alle Tätigkeiten so genau wie nur möglich.
+            <br>
+  
+            <br>
+            <textarea class="textarea" placeholder="z.B. Pflegen einer Kundendateiliste in Excel: Öffnen des Programms XY > Öffnen der Datei > Daten in Spalte / Zeile einpflegen > Speichern
+          " rows="5"></textarea>
+        </div>
+  
+        <div class="column">
+          <p>
+            Beschreibe bitte den genaueren Kontext dieser Tätigkeit (z.B. durch Nennung der Projektphase, Zuordnung zu
+            einem bestimmten Arbeitsbereich, …)</p>
+          <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+        </div>
+        <div class="column"><p>
+          Diese Aufgabe erledige ich:
+  
+        </p>
+        </div>
+        <div class="control">
+          <div class="column">
+  
+            <label class="radio">
+              <input type="radio" name="moredaily">
+              Mehrmals am Tag
+            </label>
+            <label class="radio">
+              <input type="radio" name="daily">
+              jeden Tag </label>
+            <label class="radio">
+              <input type="radio" name="moreweekly">
+              2-3x in der Woche
+            </label>
+            <label class="radio">
+              <input type="radio" name="weekly">
+              Einmal pro Woche
+            </label>
+            <label class="radio">
+              <input type="radio" name="2weeks">
+              alle 2 Wochen
+            </label>
+            <label class="radio">
+              <input type="radio" name="monthly">
+              Einmal im Monat
+            </label>
+            <label class="radio">
+              <input type="radio" name="first">
+              zum ersten Mal
+            </label>
+          </div>
+        </div>
+        <div class="column">
+          <p>
+            Welche Programme / Software verwendest du, um deine Aufgabe zu erledigen?
+            <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+        </div>
+        <div class="column">
+          <p>
+            Welches Programm / Welche Programme verwendest du zur Erledigung dieser Tätigkeit?
+            <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+        </div>
+        <div class="column">
+          <p>
+            Wie funktioniert das Zusammenspiel der verschiedenen Programme?
+            <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+        </div>
+        <div class="column">
+          <p>
+            Mich interessiert auch die Zusammenarbeit mit anderen Kolleg:innen. Inwiefern sind deine Kolleg:innen in die
+            Erledigung der Aufgaben einbezogen / notwendig, um eine Aufgabe abzuschließen? Wie viele sind involviert?
+            <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+        </div>
+        <div class="column">
+          <p>
+            Wie war dein Tag?</p>
+          <div class="control">
+            <div class="column">
+  
+              <label class="checkbox">
+                <input type="checkbox" name="gut">
+                Gut
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="neutral">
+                Neutral
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="schlecht">
+                Schlecht
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="stressig">
+                Stressig
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="entspannt">
+                Entspannt
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="frust">
+                Frustrierend
+              </label>
+              <textarea class="textarea" placeholder="Kommentar" rows="1"></textarea>
+            </div>
+  
+            <input class="button" type="submit" value="Speichern">
+  
+          </div>
+        </div>
+        </div>
+
+        <div id="task3-tab-content">
+          <div class="column" id="task3-1">
+            <article class="message">
+              <div class="message-header">
+                <p>Bitte pro Tätigkeit einen neuen Tab verwenden</p>
+              </div>
+            </article>
+            <p>Im folgenden Teil Bitte ich dich Beschreibe möglichst detailliert, welche Aufgaben du heute am Computer
+              erledigt hast.
+              <br>
+              Notiere möglichst alle Tätigkeiten so genau wie nur möglich.
+              <br>
+    
+              <br>
+              <textarea class="textarea" placeholder="z.B. Pflegen einer Kundendateiliste in Excel: Öffnen des Programms XY > Öffnen der Datei > Daten in Spalte / Zeile einpflegen > Speichern
+            " rows="5"></textarea>
+          </div>
+    
+          <div class="column">
+            <p>
+              Beschreibe bitte den genaueren Kontext dieser Tätigkeit (z.B. durch Nennung der Projektphase, Zuordnung zu
+              einem bestimmten Arbeitsbereich, …)</p>
+            <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+          </div>
+          <div class="column"><p>
+            Diese Aufgabe erledige ich:
+    
+          </p>
+          </div>
+          <div class="control">
+            <div class="column">
+    
+              <label class="radio">
+                <input type="radio" name="moredaily">
+                Mehrmals am Tag
+              </label>
+              <label class="radio">
+                <input type="radio" name="daily">
+                jeden Tag </label>
+              <label class="radio">
+                <input type="radio" name="moreweekly">
+                2-3x in der Woche
+              </label>
+              <label class="radio">
+                <input type="radio" name="weekly">
+                Einmal pro Woche
+              </label>
+              <label class="radio">
+                <input type="radio" name="2weeks">
+                alle 2 Wochen
+              </label>
+              <label class="radio">
+                <input type="radio" name="monthly">
+                Einmal im Monat
+              </label>
+              <label class="radio">
+                <input type="radio" name="first">
+                zum ersten Mal
+              </label>
+            </div>
+          </div>
+          <div class="column">
+            <p>
+              Welche Programme / Software verwendest du, um deine Aufgabe zu erledigen?
+              <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+          </div>
+          <div class="column">
+            <p>
+              Welches Programm / Welche Programme verwendest du zur Erledigung dieser Tätigkeit?
+              <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+          </div>
+          <div class="column">
+            <p>
+              Wie funktioniert das Zusammenspiel der verschiedenen Programme?
+              <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+          </div>
+          <div class="column">
+            <p>
+              Mich interessiert auch die Zusammenarbeit mit anderen Kolleg:innen. Inwiefern sind deine Kolleg:innen in die
+              Erledigung der Aufgaben einbezogen / notwendig, um eine Aufgabe abzuschließen? Wie viele sind involviert?
+              <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+          </div>
+          <div class="column">
+            <p>
+              Wie war dein Tag?</p>
+            <div class="control">
+              <div class="column">
+    
+                <label class="checkbox">
+                  <input type="checkbox" name="gut">
+                  Gut
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="neutral">
+                  Neutral
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="schlecht">
+                  Schlecht
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="stressig">
+                  Stressig
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="entspannt">
+                  Entspannt
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="frust">
+                  Frustrierend
+                </label>
+                <textarea class="textarea" placeholder="Kommentar" rows="1"></textarea>
+              </div>
+    
+              <input class="button" type="submit" value="Speichern">
+    
+            </div>
+          </div>
+          </div>
+
+          <div id="task4-tab-content">
+            <div class="column" id="task4-1">
+              <article class="message">
+                <div class="message-header">
+                  <p>Bitte pro Tätigkeit einen neuen Tab verwenden</p>
+                </div>
+              </article>
+              <p>Im folgenden Teil Bitte ich dich Beschreibe möglichst detailliert, welche Aufgaben du heute am Computer
+                erledigt hast.
+                <br>
+                Notiere möglichst alle Tätigkeiten so genau wie nur möglich.
+                <br>
+      
+                <br>
+                <textarea class="textarea" placeholder="z.B. Pflegen einer Kundendateiliste in Excel: Öffnen des Programms XY > Öffnen der Datei > Daten in Spalte / Zeile einpflegen > Speichern
+              " rows="5"></textarea>
+            </div>
+      
+            <div class="column">
+              <p>
+                Beschreibe bitte den genaueren Kontext dieser Tätigkeit (z.B. durch Nennung der Projektphase, Zuordnung zu
+                einem bestimmten Arbeitsbereich, …)</p>
+              <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+            </div>
+            <div class="column"><p>
+              Diese Aufgabe erledige ich:
+      
+            </p>
+            </div>
+            <div class="control">
+              <div class="column">
+      
+                <label class="radio">
+                  <input type="radio" name="moredaily">
+                  Mehrmals am Tag
+                </label>
+                <label class="radio">
+                  <input type="radio" name="daily">
+                  jeden Tag </label>
+                <label class="radio">
+                  <input type="radio" name="moreweekly">
+                  2-3x in der Woche
+                </label>
+                <label class="radio">
+                  <input type="radio" name="weekly">
+                  Einmal pro Woche
+                </label>
+                <label class="radio">
+                  <input type="radio" name="2weeks">
+                  alle 2 Wochen
+                </label>
+                <label class="radio">
+                  <input type="radio" name="monthly">
+                  Einmal im Monat
+                </label>
+                <label class="radio">
+                  <input type="radio" name="first">
+                  zum ersten Mal
+                </label>
+              </div>
+            </div>
+            <div class="column">
+              <p>
+                Welche Programme / Software verwendest du, um deine Aufgabe zu erledigen?
+                <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+            </div>
+            <div class="column">
+              <p>
+                Welches Programm / Welche Programme verwendest du zur Erledigung dieser Tätigkeit?
+                <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+            </div>
+            <div class="column">
+              <p>
+                Wie funktioniert das Zusammenspiel der verschiedenen Programme?
+                <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+            </div>
+            <div class="column">
+              <p>
+                Mich interessiert auch die Zusammenarbeit mit anderen Kolleg:innen. Inwiefern sind deine Kolleg:innen in die
+                Erledigung der Aufgaben einbezogen / notwendig, um eine Aufgabe abzuschließen? Wie viele sind involviert?
+                <textarea class="textarea" placeholder="Kontext der Tätigkeit" rows="5"></textarea>
+            </div>
+            <div class="column">
+              <p>
+                Wie war dein Tag?</p>
+              <div class="control">
+                <div class="column">
+      
+                  <label class="checkbox">
+                    <input type="checkbox" name="gut">
+                    Gut
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="neutral">
+                    Neutral
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="schlecht">
+                    Schlecht
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="stressig">
+                    Stressig
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="entspannt">
+                    Entspannt
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="frust">
+                    Frustrierend
+                  </label>
+                  <textarea class="textarea" placeholder="Kommentar" rows="1"></textarea>
+                </div>
+      
+                <input class="button" type="submit" value="Speichern">
+      
+              </div>
+            </div>
+            </div>
+      <div class="is-hidden" id="task1-tab-content">
+        <h1 class="title is-1" style="text-align:center;">Here will be the contents of the "aufgabe1" tab</h1>
+      </div>
+      <div class="is-hidden" id="task2-tab-content">
+        <h1 class="title is-1" style="text-align:center;">Here will be the contents of the "aufgabe2" tab</h1>
+      </div>
+      <div class="is-hidden" id="task3-tab-content">
+        <h1 class="title is-1" style="text-align:center;">Here will be the contents of the "aufgabe3" tab</h1>
+      </div>
+      <div class="is-hidden" id="task4-tab-content">
+        <h1 class="title is-1" style="text-align:center;">Here will be the contents of the "aufgabe4" tab</h1>
+      </div>
+    </div>
+  <script>
+    
+
+    function openTask1() {
+      removeActive();
+      hideAll();
+      $("#task1-tab").addClass("is-active");
+      $("#task1-tab-content").removeClass("is-hidden");
+    }
+
+    function openTask2() {
+      removeActive();
+      hideAll();
+      $("#task2-tab").addClass("is-active");
+      $("#task2-tab-content").removeClass("is-hidden");
+    }
+
+    function openTask3() {
+      removeActive();
+      hideAll();
+      $("#task3-tab").addClass("is-active");
+      $("#task3-tab-content").removeClass("is-hidden");
+    }
+
+    function openTask4() {
+      removeActive();
+      hideAll();
+      $("#task4-tab").addClass("is-active");
+      $("#task4-tab-content").removeClass("is-hidden");
+    }
+
+    function removeActive() {
+      $("li").each(function () {
+        $(this).removeClass("is-active");
+      });
+    }
+
+    function hideAll() {
+      $("#task1-tab-content").addClass("is-hidden");
+      $("#task2-tab-content").addClass("is-hidden");
+      $("#task3-tab-content").addClass("is-hidden");
+      $("#task4-tab-content").addClass("is-hidden");
+    }
+  </script>
+
+  <footer class="footer has-text-centered">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8-desktop is-offset-2-desktop">
+          <p>
+            <strong class="has-text-weight-semibold">
+              <a href="mailto:alina.schark@stud.uni-regensburg.de">Alina Schark</a>
+            </strong>
+          </p>
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="lib/main.js"></script>
+</body>
+
+</html>

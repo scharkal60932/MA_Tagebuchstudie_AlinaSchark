@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tagebuchstudie Alina Schark</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/tabs.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="import" href="../assets/headernav.html">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" language="javascript" src="../javascripts/tabs.js"></script>
+</head>
+
+<body>
+    
+    <section class="hero is-medium is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-mobile">
+                    <div class="column is-8-desktop is-offset-2-desktop">
+                        <h1 class="title is-2 is-spaced">
+                            Herzlich Willkommen zu meiner Tagebuchstudie am Montag!
+                        </h1>
+                        <h2 class="subtitle is-4">
+                            Hallo und vielen Dank für die Teilnahme an meiner Tagebuchstudie!
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" id="burger" class="navbar-burger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+            <div class="navbar-start">
+                <a class="navbar-item" href="../start.html">
+                    Start
+                </a>
+                <a class="navbar-item is-active" href="demografie.html">
+                    Demografie
+                </a>
+                <a class="navbar-item" href="alltag.html">
+                    Alltägliche Aufgaben
+                </a>
+                <a class="navbar-item" href="montag.html">
+                    Tag 1
+                </a>
+
+
+                <a class="navbar-item" href="dienstag.html">
+                    Tag 2
+                </a>
+
+                <a class="navbar-item" href="mittwoch.html">
+                    Tag 3
+                </a>
+
+                <a class="navbar-item" href="donnerstag.html">
+                    Tag 4
+                </a>
+
+                <a class="navbar-item" href="freitag.html">
+                    Tag 5
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Infos
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="../infos/ueber.html">
+                            Über
+                        </a>
+                        <a class="navbar-item" href="../infos/datenschutz.html">
+                            Datenschutz
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="../infos/kontakt.html">
+                            Kontakt
+                        </a>
+                    </div>
+                </div>
+            
+                
+            </div>
+
+           
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-mobile">
+                <div class="column ">
+                    <div class="content">
+                        <h1>Demografie</h1>
+
+                        <div class="field">
+                            <label class="label">Alter</label>
+                            <input class="input" type="number" placeholder="Alter" value="Alter">
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Geschlecht</label>
+                            <div class="control">
+                                <div class="select">
+                                    <select>
+                                        <option>Weiblich</option>
+                                        <option>Männlich</option>
+                                        <option>Divers</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Höchster Bildungsabschluss</label>
+
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    (Noch) kein Abschluss
+                                </label></ul>
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    Hauptschulabschluss
+                                </label></ul>
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    Mittlere Reife
+                                </label></ul>
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    Abitur (allgemeine Hochschulreife), fachgebundene Hochschulreife oder
+                                    Fachhochschulreife
+                                </label></ul>
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    Beruflich-betriebliche / schulische Ausbildung
+                                </label></ul>
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    Meister- oder Technikerabschluss
+                                </label></ul>
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    Berufs- oder Fachakademie, Duale Hochschule oder Schule des Gesundheitswesens
+                                    (2-3-jährig) </label>
+                            </ul>
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    (Fach-) Hochschulabschluss: Bachelor / Ingenieurschulabschluss
+                                </label></ul>
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    (Fach-) Hochschulabschluss: Master / Diplom / Magister / Staatsexamen
+                                </label></ul>
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    Promotion </label></ul>
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    Sonstige
+                                    <input class="input" type="text" placeholder="Sonstige:">
+                                </label></ul>
+                            </li>
+                        </div>
+
+
+                        <div class="field">
+                            <label class="label">Beschäftigungsverhältnis</label>
+
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    Aushilfe
+                                </label></ul>
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    Werkstudent:in
+                                </label></ul>
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    Teilzeit
+                                </label></ul>
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    Vollzeit
+                                </label></ul>
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    Selbständig
+                                </label></ul>
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    Unbeschäftigt / Arbeitsuchend
+                                </label></ul>
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    Pensioniert / Rentner </label></ul>
+                            <ul><label class="radio">
+                                    <input type="radio" name="answer">
+                                    Sonstige
+                                    <input class="input" type="text" placeholder="Sonstige:">
+                                </label></ul>
+                            </li>
+                        </div>
+                        <form name="form1" id="form1" action="/action_page.php">
+                            Berufssetor: <select name="subject" id="subject">
+                                <option value="" selected="selected">Wähle den Berufssektor</option>
+                              </select>
+                              <br><br>
+                            Berufssegment: <select name="topic" id="topic">
+                                <option value="" selected="selected">Bitte zuerst den Berufssektor auswählen</option>
+                              </select>
+                              <br><br>
+                            Berufsbezeichnung: <select name="chapter" id="chapter">
+                                <option value="" selected="selected">Bitte zuerst das Berufssegment auswählen</option>
+                              </select>
+                              <br><br>
+                            </form>
+    
+
+                        <div class="field">
+                            <label class="label">Genaue Berufsbezeichnung</label>
+                            <textarea class="textarea"
+                                placeholder="Welche berufliche Tätigkeit übst Du derzeit überwiegend aus? Gib bitte deine Tätigkeitsbezeichnung möglichst genau an (z.B. nicht 'kaufmännische Angestellte', sondern 'Speditionskauffrau') bzw. spezifiziere so genau wie möglich, was deine Tätigkeit ist/ beinhaltet."
+                                rows="3"></textarea>
+                            <label class="label">Wie lange führst du den Beruf bereits aus?</label>
+                            <textarea class="textarea" placeholder="Berufsausübung" rows="1"></textarea>
+                            <label class="label">Dauer des Beschäftigungsverhältnisses beim aktuellen
+                                Arbeitgeber:</label>
+                            <textarea class="textarea" placeholder="" rows="1"></textarea>
+                        </div>
+                       
+                    </div>
+                    <input class="button is-success" type="submit" value="Speichern">
+                </div>
+                </div>
+                </div>
+                </section>
+
+                <footer class="footer has-text-centered">
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column is-until-widescreen">
+                                <p>
+                                    <strong class="has-text-weight-semibold">
+                                        <a href="mailto:alina.schark@stud.uni-regensburg.de">Alina Schark</a>
+                                    </strong>
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <script type="text/javascript" src="lib/main.js"></script>
+</body>
+<script>const myNav = document.querySelector("#navbar")
+    const burger = document.querySelector("#burger")
+    burger.addEventListener('click', ()=> {
+        myNav.classList.toggle("is-active")
+        burger.classList.toggle("is-active")
+    })
+
+    
+    </script>
+
+<script>
+    var subjectObject = {
+      "Produktionsberuf": {
+        "Land-, Forst- und Gartenbauberuf": ["Land-, Tier- und Forstwirtschaftsberuf", "Gartenbauberufe und Floristik"],
+        "Fertigungsberuf": ["Rohstoffgewinnung und -aufbereitung, Glas- und Keramikherstellung und -verarbeitung", "Kunststoffherstellung und -verarbeitung, Holzbe- und -verarbeitung", "Papier- und Druckberufe, technische Mediengestaltung", "Metallerzeugung und -bearbeitung, Metallbauberufe", "Textil- und Lederberuf", "Produktdesign und kunsthandwerkliche Berufe, bildende Kunst, Musikinstrumentenbau" ],
+        "Fertigungstechnischer Beruf": ["Maschinen- und Fahrzeugtechnikberuf", "Mechatronik-, Energie- und Elektroberuf", "Technische Forschungs-, Entwicklungs-, Konstruktions- u. Produktionssteuerungsberuf"],
+        "Bau- und Ausbauberufe": ["Bauplanungs-, Architektur- und Vermessungsberufe", "Hoch- und Tiefbauberuf","(Innen-)Ausbauberuf", "Gebäude- und versorgungstechnischer Beruf"] 
+      },
+      "Personenbezogener Dienstleistungsberuf": {
+        "Lebensmittel- und Gastgewerbeberuf": ["Lebensmittelherstellung und -verarbeitung", "Tourismus-, Hotel- und Gaststättenberuf"],
+        "Medizinischer u. nicht-medizinischer Gesundheitsberuf": ["Medizinischer Gesundheitsberuf", "Nichtmedizinischer Gesundheits-, Körperpflege- und Wellnessberuf, Medizintechnik"],
+        "Soziale und kulturelle Dienstleistungsberufe": ["Erziehung, soziale und hauswirtschaftliche Berufe, Theologie", "Lehrender und ausbildender Beruf", "Sprach-, literatur-, geistes-, gesellschafts- und wirtschaftswissenschaftlicher Beruf", "Darstellender und unterhaltender Beruf"]
+      },
+      "Kaufmännischer / unternehmensbezogener Dienstleistungsberuf": {
+        "Handelsberuf": ["Einkaufs-, Vertriebs- und Handelsberuf", "Verkaufsberuf"],
+        "Berufe in Unternehmensführung und -organisation": ["Berufe in Unternehmensführung und -organisation"],
+        "Unternehmensbezogene Dienstleistungsberufe": ["Beruf in Finanzdienstleistungen, Rechnungswesen und Steuerberatung", "Beruf in Recht und Verwaltung", "Werbung, Marketing, kaufmännischer und redaktioneller Medienberuf"]
+
+      },
+      "IT- / naturwissenschaftlicher Dienstleistungsberuf": {
+        "Mathematik-, Biologie-, Chemie- und Physikberuf": ["Mathematik", "Biologie", "Chemie", "Physik"],
+        "Geologie-, Geografie- und Umweltschutzberuf":["Geologie", "Geografie", "Umweltschutz"],
+        "Informatik-, Informations- und Kommunikationstechnologieberuf":["Informatik", "Informationstechnologie", "Kommunikationstechnologie"]
+      },
+      "Sonstiger wirtschaftlicher Dienstleistungsberuf": {
+        "Sicherheitsberuf": ["Schutz-, Sicherheits- und Überwachungsberufe", "Angehörige der regulären Streitkräfte"],
+        "Verkehrs- und Logistikberuf": ["Verkehrs- / Logistikberuf (außer Fahrzeugführung)", "Führer/innen von Fahrzeug- und Transportgeräten"],
+        "Reinigungsberuf":["Reinigungsberuf"]
+      }
+    }
+    window.onload = function() {
+      var subjectSel = document.getElementById("subject");
+      var topicSel = document.getElementById("topic");
+      var chapterSel = document.getElementById("chapter");
+      for (var x in subjectObject) {
+        subjectSel.options[subjectSel.options.length] = new Option(x, x);
+      }
+      subjectSel.onchange = function() {
+        //empty Chapters- and Topics- dropdowns
+        chapterSel.length = 1;
+        topicSel.length = 1;
+        //display correct values
+        for (var y in subjectObject[this.value]) {
+          topicSel.options[topicSel.options.length] = new Option(y, y);
+        }
+      }
+      topicSel.onchange = function() {
+        //empty Chapters dropdown
+        chapterSel.length = 1;
+        //display correct values
+        var z = subjectObject[subjectSel.value][this.value];
+        for (var i = 0; i < z.length; i++) {
+          chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+        }
+      }
+    }
+    </script>
+
+</html>

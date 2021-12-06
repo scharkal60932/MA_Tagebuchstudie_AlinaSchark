@@ -1,0 +1,102 @@
+body{
+    background-color:white;
+    border-top-color: black;
+    border-top-style: solid;
+}
+
+.navbar-item, .navbar-link {
+    color: #bf1b1b;
+    background-color: white;
+    display: block;
+    line-height: 1.5;
+    position: relative;
+  }
+  
+a.navbar-item, .navbar-link {
+color: black;
+ background-color: #ffc400; }
+ 
+  a{
+    text-decoration: none ;
+  }
+
+  .navbar-link{
+      color: black;
+      background-color: #ffd54a;
+  }
+
+  .navbar {
+    color: black;
+    background-color: #ffd54a;  
+    padding-top:0%;
+    padding-bottom: 0%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+.navbar-start{
+    background-color: #ffc400; 
+}
+a.navbar-item.is-active, .navbar-link.is-active{
+    color: #bf1b1b
+}
+
+    a.navbar-item.is-active:not(:focus):not(:hover), .navbar-link.is-active:not(:focus):not(:hover){
+        background-color: #ffc400;
+        border-color: black;
+    }
+
+    a.navbar-item.is-active{
+    background-color: black;
+    }
+    a.navbar-item:not(:focus):not(:hover), .navbar-link.is-active:not(:focus):not(:hover){
+        background-color:#ffd54ab4;
+
+    }
+    a.navbar-item:hover, .navbar-link:hover{
+        color:black;
+        background-color: white;
+    }
+    .navbar-item.has-dropdown{
+        background-color: #ffd54ab4;
+    }
+
+    .tabs.is-left ul{
+        color: black;
+        background-color: #ffc400;
+    }
+    .tabs li.is-active a{
+        border-bottom-color: black;
+        color: black;
+        background-color: white;
+    }
+    .tabs li{
+        color: black;
+        background-color: #ffc400;
+
+    }
+    .tabs li.is-active a {
+        background-color: white;
+
+    }
+    .tabs li.is-active a{
+        background-color: white;
+    }
+    li.task1-tab.is-active{
+        background-color: white;
+    }
+
+    .tabs a {
+        border-top-style: solid;
+        border-left-style: solid;
+        border-right-style: solid;
+        border-bottom-style:none;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        border-top-width: 1px;
+        border-left-width: 1px;
+
+        border-right-width: 1px;
+
+    }
